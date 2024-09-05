@@ -10,6 +10,34 @@ package pucmg.aulaspm242.banco;
  */
 public class AppBanco {
 // esta classe possui vários métodos main, um pra cada aula realizada
+ 
+    public static void main(String[] args) {
+                      
+        Conta_G3M c = new Conta_G3M("1", "111", 200, 100, 0.03);
+        
+        c.sacar(250);
+        System.out.println(c.imprimirExtrato());
+        
+        c.depositar(25);
+        System.out.println(c.imprimirExtrato());
+        
+        c.depositar(50);
+        System.out.println(c.imprimirExtrato());
+        
+        System.out.println(c.sacar(20));
+        System.out.println(c.imprimirExtrato());
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
     public static void main(String[] args) {
         
         Conta_G1N c = new Conta_G1N("0", "0000", 200, 100, 0.03);
@@ -24,7 +52,7 @@ public class AppBanco {
         System.out.println(c.imprimirExtrato());
         
     }
-
+*/
     
     
     
