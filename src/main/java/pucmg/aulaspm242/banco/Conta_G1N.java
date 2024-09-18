@@ -70,5 +70,9 @@ public class Conta_G1N {
         this.taxa = novaTaxa;
         return "Taxa Alterada com Sucesso!";
     }
+    
+    public double getSaldo(){
+        return this.saldo;
+    }
 
 }

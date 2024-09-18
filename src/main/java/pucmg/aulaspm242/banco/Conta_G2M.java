@@ -15,6 +15,13 @@ public class Conta_G2M {
     private double saldo;
     private double limite;
 
+    public Conta_G2M(String identificador, String cpf, double limite) {
+        this.identificador = identificador;
+        this.cpf = cpf;
+        this.limite = limite;
+    }
+    
+    
     public boolean saque(double valor) {
 
         if (valor <= this.saldo + this.limite) {
@@ -36,7 +43,7 @@ public class Conta_G2M {
         }
     }
 
-    private double descontarTaxa() {
+    public double descontarTaxa() {
         return Math.abs(this.saldo * 0.03);
     }
 
@@ -44,6 +51,13 @@ public class Conta_G2M {
         this.limite = limite;
     }
     
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+    
+    public double getSaldo(){
+        return this.saldo;
+    }
     public String imprimeExtrato(){
         return "O saldo da conta é de " + this.saldo 
                 + "\nO limite da conta é de " + this.limite;
