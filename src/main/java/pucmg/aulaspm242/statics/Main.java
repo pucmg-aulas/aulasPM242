@@ -23,9 +23,6 @@ public class Main {
         Aluno.imprimeAluno(b);
         Aluno.imprimeAluno(c);
         
-        Aluno.
-        
-      
         
         
     }
