@@ -30,7 +30,7 @@ public class Main {
             SeguroDeVeiculo sv = (SeguroDeVeiculo)s;
             sv.getValorSegurado();
         }
-        s.getValorSegurado();
+        //s.getValorSegurado();
     }
     
 }
