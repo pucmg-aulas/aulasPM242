@@ -19,7 +19,7 @@ import java.util.List;
 public abstract class AbstractDAO {
 
 
-    public String grava(String local, List lista) {
+    public String gravar(String local, List lista) {
         try {
             FileOutputStream fo = new FileOutputStream(local);
             ObjectOutputStream oo = new ObjectOutputStream(fo);
@@ -31,7 +31,7 @@ public abstract class AbstractDAO {
         }
     }
 
-    public List leitura(String local) {
+    public List ler(String local) {
         List retorno = new ArrayList();
         try {
             File arq = new File(local);
