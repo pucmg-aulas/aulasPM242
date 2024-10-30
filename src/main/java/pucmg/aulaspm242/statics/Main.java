@@ -23,7 +23,17 @@ public class Main {
         Aluno.imprimeAluno(b);
         Aluno.imprimeAluno(c);
         
+        Disc d1 = new Disc();
+        Disc d2 = new Disc();
         
+        d1.nome = "Programação";
+        d1.ch = 30;
+        
+        d2.nome = "Redes";
+        d2.ch = 60;
+        
+        System.out.println(d1);
+        System.out.println(d2);
         
     }
     
